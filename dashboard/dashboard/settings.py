@@ -25,7 +25,8 @@ SECRET_KEY = '#nb9h@gz)z*dfjz61t1mz0a&jq5gbsqwo3a6ysgu*nfvwnu8a!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [os.getenv('DASHBOARD_HOST')]
+print('ALLOWED_HOSTS')
 
 
 # Application definition
